@@ -39,7 +39,8 @@ function showMessage(response) {
     yesButton.style.display = "none";
 
     // Update text content, show message, and change image source to "dance.gif"
-    questionMessage.textContent = "LESSSSGOOOO ci vediamo il 14 Gatopazo! 🤍🐈✨ (PLS NON RIPETIAMO AVVENTURA DELL'ANNO SCORSO PERÒ)";
+    questionMessage.textContent = "LESSSSGOOOO ci vediamo il 14 Gatopazo! 🤍🐈✨ 
+        (PLS NON RIPETIAMO AVVENTURA DELL'ANNO SCORSO PERÒ)";
     noMessage.style.display = "none";
     yesMessage.style.display = "block";
     document.getElementsByClassName("image")[0].src = "images/dance.gif";
