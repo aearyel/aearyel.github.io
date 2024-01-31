@@ -28,10 +28,9 @@ function showMessage(response) {
   }
 
   if (response === "Yes") {
-    // Hide name message and buttons
-    document.getElementById("name").style.display = "none";
-    document.getElementById("no-button").style.display = "none";
-    document.getElementById("yesButton").style.display = "none";
+    // Remove name message and no button
+    document.getElementById("name").remove();
+    document.getElementById("no-button").remove();
 
     // Update text content, show message, and change image source to "dance.gif"
     const yesMessage = document.getElementById("question");
@@ -40,6 +39,7 @@ function showMessage(response) {
     yesMessage.style.fontStyle = "normal";
     document.getElementsByClassName("image")[0].src = "images/dance.gif";
 
-    // Optional: You can also add a timeout to reset the display after a few seconds
+    // Remove yes button
+    document.getElementById("yesButton").remove();
   }
 }
