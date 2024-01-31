@@ -24,13 +24,11 @@ function showMessage(response) {
     noButton.style.top = randomY + "px";
 
     // Update text content and hide name message
-  
+    questionMessage.textContent = "COME TI PERMETTI, GUARDA CHE TI RAFIO EH!";
     nameMessage.style.display = "none";
 
-    // Hide yes message if visible
-    if (yesMessage.style.display !== "none") {
-      yesMessage.style.display = "none";
-    }
+    // Hide yes message
+    yesMessage.style.display = "none";
 
     // Show no message
     noMessage.style.display = "block";
@@ -43,12 +41,10 @@ function showMessage(response) {
     yesButton.style.display = "none";
 
     // Update text content, show message, and change image source to "dance.gif"
+    questionMessage.innerHTML = "LESSSSGOOOO ci vediamo il 14 Gatopazo! 🤍🐈✨<br>(PLS NON RIPETIAMO AVVENTURA DELL'ANNO SCORSO PERÒ)";
 
-
-    // Hide no message if visible
-    if (noMessage.style.display !== "none") {
-      noMessage.style.display = "none";
-    }
+    // Hide no message
+    noMessage.style.display = "none";
 
     // Show yes message
     yesMessage.style.display = "block";
