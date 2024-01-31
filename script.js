@@ -26,11 +26,14 @@ function showMessage(response) {
     // Update text content and hide name message
     questionMessage.textContent = "COME TI PERMETTI, GUARDA CHE TI RAFIO EH!";
     nameMessage.style.display = "none";
-    noMessage.style.display = "block";
-    yesMessage.style.display = "none";
 
-    // Optional: Reset display for Yes message
-    yesMessage.style.display = "none";
+    // Hide yes message if visible
+    if (yesMessage.style.display !== "none") {
+      yesMessage.style.display = "none";
+    }
+
+    // Show no message
+    noMessage.style.display = "block";
   }
 
   if (response === "Yes") {
@@ -41,11 +44,13 @@ function showMessage(response) {
 
     // Update text content, show message, and change image source to "dance.gif"
     questionMessage.innerHTML = "LESSSSGOOOO ci vediamo il 14 Gatopazo! 🤍🐈✨<br>(PLS NON RIPETIAMO AVVENTURA DELL'ANNO SCORSO PERÒ)";
-    noMessage.style.display = "none";
 
-    // Optional: Reset display for No message
-    noMessage.style.display = "none";
-    
+    // Hide no message if visible
+    if (noMessage.style.display !== "none") {
+      noMessage.style.display = "none";
+    }
+
+    // Show yes message
     yesMessage.style.display = "block";
     document.querySelector(".image").src = "images/dance.gif";
   }
