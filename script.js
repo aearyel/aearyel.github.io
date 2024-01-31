@@ -28,6 +28,9 @@ function showMessage(response) {
     nameMessage.style.display = "none";
     noMessage.style.display = "block";
     yesMessage.style.display = "none";
+
+    // Optional: Reset display for Yes message
+    yesMessage.style.display = "none";
   }
 
   if (response === "Yes") {
@@ -39,6 +42,10 @@ function showMessage(response) {
     // Update text content, show message, and change image source to "dance.gif"
     questionMessage.innerHTML = "LESSSSGOOOO ci vediamo il 14 Gatopazo! 🤍🐈✨<br>(PLS NON RIPETIAMO AVVENTURA DELL'ANNO SCORSO PERÒ)";
     noMessage.style.display = "none";
+
+    // Optional: Reset display for No message
+    noMessage.style.display = "none";
+    
     yesMessage.style.display = "block";
     document.querySelector(".image").src = "images/dance.gif";
   }
