@@ -24,7 +24,7 @@ function showMessage(response) {
     noButton.style.top = randomY + "px";
 
     // Update text content and hide name message
-    questionMessage.textContent = "Come no! GUARDA CHE TI RAFIO EH!";
+    questionMessage.textContent = "COME TI PERMETTI, GUARDA CHE TI RAFIO EH!";
     nameMessage.style.display = "none";
     noMessage.style.display = "block";
     yesMessage.style.display = "none";
