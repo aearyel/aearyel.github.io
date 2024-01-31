@@ -24,7 +24,7 @@ function showMessage(response) {
     noButton.style.top = randomY + "px";
 
     // Update text content and hide name message
-    questionMessage.textContent = "COME TI PERMETTI, GUARDA CHE TI RAFIO EH!";
+  
     nameMessage.style.display = "none";
 
     // Hide yes message if visible
@@ -43,7 +43,7 @@ function showMessage(response) {
     yesButton.style.display = "none";
 
     // Update text content, show message, and change image source to "dance.gif"
-    questionMessage.innerHTML = "LESSSSGOOOO ci vediamo il 14 Gatopazo! 🤍🐈✨<br>(PLS NON RIPETIAMO AVVENTURA DELL'ANNO SCORSO PERÒ)";
+
 
     // Hide no message if visible
     if (noMessage.style.display !== "none") {
